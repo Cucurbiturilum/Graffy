@@ -1,6 +1,31 @@
 header h1 {
-  font: 3.125rem "Arial", sans-serif;
+  font: 1rem "Arial", sans-serif;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  header h1 {
+    font-size: 3.125rem;
+  }
+}
+header .carousel-indicators {
+  display: block;
+  right: auto;
+  bottom: 50%;
+  margin: 0 2%;
+}
+header .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  margin: 7px 0;
+  opacity: 1;
+}
+header .carousel-indicators .active {
+  background-color: #ff6b24;
+}
+header .carousel-caption {
+  bottom: 10%;
 }
 
 /*# sourceMappingURL=main.css.map */
