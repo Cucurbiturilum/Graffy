@@ -188,5 +188,31 @@ header .navbar-light .navbar-toggler-icon {
     padding-top: 6.3rem;
   }
 }
+#work span {
+  margin-bottom: 3rem;
+}
+#work .card {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+#work .card .card-body {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1024px) {
+  #work .card .card-body {
+    justify-content: center;
+  }
+}
+#work .card .card-body img {
+  width: 23rem;
+}
+@media screen and (max-width: 768px) {
+  #work .card .card-body img {
+    width: 20rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

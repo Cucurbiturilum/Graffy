@@ -125,6 +125,7 @@ header {
       margin-bottom: 6.3rem;
     }
   }
+
   p {
     font-family: $main-font;
   }
@@ -132,13 +133,15 @@ header {
   p:last-of-type {
     margin-bottom: 2rem;
   }
-  .social{
+
+  .social {
     text-align: center;
     @media screen and (min-width: 1024px) {
       text-align: left;
     }
   }
-  a{
+
+  a {
     width: 3rem;
     height: 3rem;
     background-color: #ff6b24;
@@ -150,16 +153,45 @@ header {
       height: 2rem;
       margin-bottom: 1rem;
     }
-    i{
+
+    i {
       font-size: 1rem;
       color: white;
     }
   }
 }
-#work{
+
+#work {
   @include title;
   padding-top: 3rem;
   @media screen and (min-width: 1024px) {
     padding-top: 6.3rem;
   }
+
+  span {
+    margin-bottom: 3rem;
+  }
+  .card{
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+
+    .card-body {
+      display: flex;
+      padding: 0;
+      flex-wrap: wrap;
+      @media screen and (max-width: 1024px) {
+        justify-content: center;
+      }
+
+      img {
+        width: 23rem;
+        @media screen and (max-width: 768px) {
+          width: 20rem;
+        }
+      }
+  }
+
+  }
 }
+
