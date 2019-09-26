@@ -188,38 +188,53 @@ header .navbar-light .navbar-toggler-icon {
     padding-top: 6.3rem;
   }
 }
-#work span {
-  margin-bottom: 3rem;
+#work .accordion {
+  padding-top: 3rem;
 }
-#work .card {
+#work .accordion .card {
   border: none;
   border-radius: 0;
   background-color: transparent;
 }
-#work .card .card-body {
+#work .accordion .card .card-body {
   display: flex;
   padding: 0;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 1024px) {
-  #work .card .card-body {
+  #work .accordion .card .card-body {
     justify-content: center;
   }
 }
-#work .card .card-body img {
+#work .accordion .card .card-body img {
   width: 23rem;
 }
 @media screen and (max-width: 768px) {
-  #work .card .card-body img {
-    width: 20rem;
+  #work .accordion .card .card-body img {
+    width: 100%;
   }
 }
-#work .card .card-header {
+@media screen and (max-width: 425px) {
+  #work .accordion .card .card-body img {
+    padding: 0 -15px;
+  }
+}
+#work .accordion .card .card-header {
   background-color: transparent;
   border: none;
 }
-#work .card .btn-link {
+#work .accordion .card .btn {
+  border-radius: 0;
+}
+#work .accordion .card .btn-link {
   color: black;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+  margin-bottom: 3.5rem;
+}
+#work .accordion .card .btn-link:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #ff6b24;
 }
 
 /*# sourceMappingURL=main.css.map */
