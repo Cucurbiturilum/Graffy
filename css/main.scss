@@ -9,10 +9,11 @@ header {
       font-size: 3.125rem;
     }
   }
+
   .carousel-indicators {
     display: block;
     right: auto;
-    bottom: 50%;
+    top: 50%;
     margin: 0 2%;
 
     li {
@@ -22,13 +23,63 @@ header {
       border-radius: 50%;
       margin: 7px 0;
       opacity: 1;
+      @media screen and (max-width: 500px) {
+        width: 6px;
+        height: 6px;
+      }
     }
   }
 
   .carousel-indicators .active {
     background-color: #ff6b24;
   }
-  .carousel-caption{
+
+  .carousel-caption {
     bottom: 10%;
   }
+
+  .navbar {
+    position: absolute;
+    z-index: 1;
+    padding-top: 1rem;
+    @media screen and (min-width: 1024px) {
+      padding-top: 4rem;
+    }
+    img{
+      @media screen and (max-width: 500px) {
+        max-width: 50%;
+      }
+    }
+  }
+
+  .navbar-nav {
+    margin-right: 0.5rem;
+    @media screen and (min-width: 1440px) {
+      margin-right: 9rem;
+    }
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font: 0.9rem $main-font;
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem;
+    @media screen and (max-width: 500px) {
+      padding: 0.5rem;
+      font-size: 0.5rem;
+    }
+  }
+
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+  }
+
+  .navbar-collapse {
+    text-align: right;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(../images/menu.png);
+  }
+
 }
