@@ -214,5 +214,12 @@ header .navbar-light .navbar-toggler-icon {
     width: 20rem;
   }
 }
+#work .card .card-header {
+  background-color: transparent;
+  border: none;
+}
+#work .card .btn-link {
+  color: black;
+}
 
 /*# sourceMappingURL=main.css.map */
