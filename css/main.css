@@ -196,6 +196,11 @@ header .navbar-light .navbar-toggler-icon {
   border-radius: 0;
   background-color: transparent;
 }
+@media screen and (max-width: 425px) {
+  #work .accordion .card {
+    margin: 0 -15px;
+  }
+}
 #work .accordion .card .card-body {
   display: flex;
   padding: 0;
