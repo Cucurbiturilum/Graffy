@@ -126,6 +126,14 @@ header .navbar-light .navbar-toggler-icon {
 #about p:last-of-type {
   margin-bottom: 2rem;
 }
+#about .social {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  #about .social {
+    text-align: left;
+  }
+}
 #about a {
   width: 3rem;
   height: 3rem;
