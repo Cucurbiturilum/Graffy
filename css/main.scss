@@ -1,5 +1,32 @@
 $main-font: 'Arial', sans-serif;
+@mixin title {
+  h2 {
+    text-transform: uppercase;
+    font: 1.5rem $main-font;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 2.5rem;
+    }
+  }
 
+  span:before {
+    content: '';
+    display: block;
+    border-top: 1px solid #ff6b24;
+    width: 4.1rem;
+    margin: auto;
+    padding-bottom: 2px;
+  }
+
+  span:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #ff6b24;
+    width: 4.1rem;
+    margin-left: 50%;
+  }
+}
 
 header {
   h1 {
@@ -45,7 +72,8 @@ header {
     @media screen and (min-width: 1024px) {
       padding-top: 4rem;
     }
-    img{
+
+    img {
       @media screen and (max-width: 500px) {
         max-width: 50%;
       }
@@ -82,4 +110,50 @@ header {
     background-image: url(../images/menu.png);
   }
 
+}
+
+#about {
+  @include title;
+  padding-top: 3rem;
+  @media screen and (min-width: 1024px) {
+    padding-top: 6.3rem;
+  }
+
+  span {
+    margin-bottom: 3rem;
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 6.3rem;
+    }
+  }
+  p {
+    font-family: $main-font;
+  }
+
+  p:last-of-type {
+    margin-bottom: 2rem;
+  }
+  a{
+    width: 3rem;
+    height: 3rem;
+    background-color: #ff6b24;
+    margin-bottom: 3rem;
+    margin-right: 0.6rem;
+    text-decoration: none;
+    @media screen and (max-width: 425px) {
+      width: 2rem;
+      height: 2rem;
+      margin-bottom: 1rem;
+    }
+    i{
+      font-size: 1rem;
+      color: white;
+    }
+  }
+}
+#work{
+  @include title;
+  padding-top: 3rem;
+  @media screen and (min-width: 1024px) {
+    padding-top: 6.3rem;
+  }
 }

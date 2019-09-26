@@ -78,4 +78,107 @@ header .navbar-light .navbar-toggler-icon {
   background-image: url(../images/menu.png);
 }
 
+#about {
+  padding-top: 3rem;
+}
+#about h2 {
+  text-transform: uppercase;
+  font: 1.5rem "Arial", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  #about h2 {
+    font-size: 2.5rem;
+  }
+}
+#about span:before {
+  content: "";
+  display: block;
+  border-top: 1px solid #ff6b24;
+  width: 4.1rem;
+  margin: auto;
+  padding-bottom: 2px;
+}
+#about span:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ff6b24;
+  width: 4.1rem;
+  margin-left: 50%;
+}
+@media screen and (min-width: 1024px) {
+  #about {
+    padding-top: 6.3rem;
+  }
+}
+#about span {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1024px) {
+  #about span {
+    margin-bottom: 6.3rem;
+  }
+}
+#about p {
+  font-family: "Arial", sans-serif;
+}
+#about p:last-of-type {
+  margin-bottom: 2rem;
+}
+#about a {
+  width: 3rem;
+  height: 3rem;
+  background-color: #ff6b24;
+  margin-bottom: 3rem;
+  margin-right: 0.6rem;
+  text-decoration: none;
+}
+@media screen and (max-width: 425px) {
+  #about a {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+#about a i {
+  font-size: 1rem;
+  color: white;
+}
+
+#work {
+  padding-top: 3rem;
+}
+#work h2 {
+  text-transform: uppercase;
+  font: 1.5rem "Arial", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  #work h2 {
+    font-size: 2.5rem;
+  }
+}
+#work span:before {
+  content: "";
+  display: block;
+  border-top: 1px solid #ff6b24;
+  width: 4.1rem;
+  margin: auto;
+  padding-bottom: 2px;
+}
+#work span:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ff6b24;
+  width: 4.1rem;
+  margin-left: 50%;
+}
+@media screen and (min-width: 1024px) {
+  #work {
+    padding-top: 6.3rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
