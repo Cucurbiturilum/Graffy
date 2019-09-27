@@ -11,7 +11,7 @@ $article-font: 'Open Sans', sans-serif;
     }
   }
 
-  span:before {
+  span.title:before {
     content: '';
     display: block;
     border-top: 1px solid #ff6b24;
@@ -20,7 +20,7 @@ $article-font: 'Open Sans', sans-serif;
     padding-bottom: 2px;
   }
 
-  span:after {
+  span.title:after {
     content: '';
     display: block;
     border-bottom: 1px solid #ff6b24;
@@ -263,7 +263,7 @@ header {
         border-right: #ff6b24 1px solid;
         border-bottom: #ff6b24 1px solid;
       }
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 500px) {
         border-right: none;
       }
     }
@@ -278,7 +278,7 @@ header {
 
     div:nth-of-type(5) {
       border-right: #ff6b24 1px solid;
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 500px) {
         border-right: none;
         border-bottom: #ff6b24 1px solid;
       }
@@ -321,4 +321,39 @@ header {
   @media screen and (max-width: 768px) {
     margin-bottom: 3rem;
   }
+  font-family: $main-font;
+  .headline{
+    @media screen and (max-width: 500px) {
+      text-align: center;
+    }
+    h3{
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #626060;
+
+    }
+    p{
+      font-size: 0.9rem;
+      font-style: italic;
+      margin-bottom: 4.25rem;
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 1rem;
+      }
+      span{
+        color: #ff6b24;
+      }
+    }
+    .btn{
+      border: none;
+    }
+    .btn-primary{
+      background-color: transparent;
+      color: #ff6b24;
+    }
+    .btn.focus, .btn:focus{
+      box-shadow: none;
+    }
+  }
+
+
 }
