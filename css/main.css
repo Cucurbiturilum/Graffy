@@ -456,4 +456,71 @@ header .navbar-light .navbar-toggler-icon {
   box-shadow: none;
 }
 
+#contact {
+  margin-bottom: 3rem;
+}
+#contact h2 {
+  text-transform: uppercase;
+  font: 1.5rem "Arial", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  #contact h2 {
+    font-size: 2.5rem;
+  }
+}
+#contact span.title:before {
+  content: "";
+  display: block;
+  border-top: 1px solid #ff6b24;
+  width: 4.1rem;
+  margin: auto;
+  padding-bottom: 2px;
+}
+#contact span.title:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ff6b24;
+  width: 4.1rem;
+  margin-left: 50%;
+}
+#contact form {
+  margin-top: 6.5rem;
+}
+@media screen and (max-width: 768px) {
+  #contact form {
+    margin-top: 3rem;
+  }
+}
+#contact .form-control {
+  border-radius: 0;
+  border-color: #bfbebe;
+  height: 3.5rem;
+}
+#contact .form-control:focus {
+  box-shadow: none;
+}
+#contact #Textarea {
+  height: 16rem;
+}
+#contact input::placeholder, #contact textarea::placeholder {
+  font: 1.1rem "Arial", sans-serif;
+}
+#contact .btn-primary {
+  background-color: #ff6b24;
+  border: none;
+}
+#contact .btn {
+  border-radius: 0;
+  font: 0.9rem "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2;
+  width: 11rem;
+}
+#contact .btn.focus, #contact .btn:focus {
+  box-shadow: none;
+}
+
 /*# sourceMappingURL=main.css.map */

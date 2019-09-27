@@ -315,45 +315,98 @@ header {
     box-shadow: none;
   }
 }
-#blog{
+
+#blog {
   @include title;
   margin-bottom: 6.3rem;
   @media screen and (max-width: 768px) {
     margin-bottom: 3rem;
   }
   font-family: $main-font;
-  .headline{
+
+  .headline {
     @media screen and (max-width: 500px) {
       text-align: center;
     }
-    h3{
+
+    h3 {
       font-size: 1.5rem;
       font-weight: bold;
       color: #626060;
 
     }
-    p{
+
+    p {
       font-size: 0.9rem;
       font-style: italic;
       margin-bottom: 4.25rem;
       @media screen and (max-width: 1024px) {
         margin-bottom: 1rem;
       }
-      span{
+
+      span {
         color: #ff6b24;
       }
     }
-    .btn{
+
+    .btn {
       border: none;
     }
-    .btn-primary{
+
+    .btn-primary {
       background-color: transparent;
       color: #ff6b24;
     }
-    .btn.focus, .btn:focus{
+
+    .btn.focus, .btn:focus {
       box-shadow: none;
     }
   }
 
 
+}
+
+#contact {
+  @include title;
+  margin-bottom: 3rem;
+
+  form {
+    margin-top: 6.5rem;
+    @media screen and (max-width: 768px) {
+      margin-top: 3rem;
+    }
+  }
+
+  .form-control {
+    border-radius: 0;
+    border-color: #bfbebe;
+    height: 3.5rem;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
+
+  #Textarea {
+    height: 16rem;
+  }
+
+  input::placeholder, textarea::placeholder {
+    font: 1.1rem $main-font;
+  }
+  .btn-primary{
+    background-color: #ff6b24;
+    border: none;
+  }
+  .btn{
+border-radius: 0;
+    font: 0.9rem $main-font;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2;
+    width: 11rem;
+  }
+  .btn.focus, .btn:focus{
+    box-shadow: none;
+  }
 }
