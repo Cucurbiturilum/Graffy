@@ -1,4 +1,5 @@
 $main-font: 'Arial', sans-serif;
+$article-font: 'Open Sans', sans-serif;
 @mixin title {
   h2 {
     text-transform: uppercase;
@@ -176,8 +177,9 @@ header {
       border: none;
       border-radius: 0;
       background-color: transparent;
+      margin-bottom: 6.3rem;
       @media screen and (max-width: 425px) {
-        margin: 0 -15px;
+        margin: 3rem -15px;
       }
 
       .card-body {
@@ -191,6 +193,7 @@ header {
         img {
           width: 23rem;
           @media screen and (max-width: 425px) {
+            height: auto;
             padding: 0 -15px;
           }
         }
@@ -215,6 +218,69 @@ header {
       .btn-link:hover {
         text-decoration: none;
         border-bottom: 1px solid #ff6b24;
+      }
+    }
+  }
+}
+
+#services {
+  @include title;
+  font-family: $article-font;
+  margin-bottom: 6.3rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 3rem;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .row {
+    div:first-of-type {
+      border-right: #ff6b24 1px solid;
+      border-bottom: #ff6b24 1px solid;
+      @media screen and (max-width: 500px) {
+        border-right: none;
+      }
+    }
+
+    div:nth-of-type(2) {
+      border-right: #ff6b24 1px solid;
+      border-bottom: #ff6b24 1px solid;
+      @media screen and (max-width: 768px) {
+        border-right: none;
+      }
+
+    }
+
+    div:nth-of-type(3) {
+      border-bottom: #ff6b24 1px solid;
+      @media screen and (max-width: 768px) {
+        border-right: #ff6b24 1px solid;
+        border-bottom: #ff6b24 1px solid;
+      }
+      @media screen and (max-width: 425px) {
+        border-right: none;
+      }
+    }
+
+    div:nth-of-type(4) {
+      border-right: #ff6b24 1px solid;
+      @media screen and (max-width: 768px) {
+        border-bottom: #ff6b24 1px solid;
+        border-right: none;
+      }
+    }
+
+    div:nth-of-type(5) {
+      border-right: #ff6b24 1px solid;
+      @media screen and (max-width: 425px) {
+        border-right: none;
+        border-bottom: #ff6b24 1px solid;
       }
     }
   }
