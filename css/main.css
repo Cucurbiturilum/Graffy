@@ -217,7 +217,7 @@ header .navbar-light .navbar-toggler-icon {
 }
 @media screen and (max-width: 425px) {
   #work .accordion .card .card-body img {
-    height: auto;
+    height: 23rem;
     padding: 0 -15px;
   }
 }
