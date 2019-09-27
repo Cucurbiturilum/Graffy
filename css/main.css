@@ -371,7 +371,7 @@ header .navbar-light .navbar-toggler-icon {
 }
 #flikr img {
   width: 20%;
-  height: 22rem;
+  max-height: 22rem;
 }
 #flikr .btn {
   background-color: #ff6b24;
