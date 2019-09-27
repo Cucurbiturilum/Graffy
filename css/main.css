@@ -334,4 +334,92 @@ header .navbar-light .navbar-toggler-icon {
   }
 }
 
+#flikr {
+  margin-bottom: 6.3rem;
+}
+#flikr h2 {
+  text-transform: uppercase;
+  font: 1.5rem "Arial", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  #flikr h2 {
+    font-size: 2.5rem;
+  }
+}
+#flikr span:before {
+  content: "";
+  display: block;
+  border-top: 1px solid #ff6b24;
+  width: 4.1rem;
+  margin: auto;
+  padding-bottom: 2px;
+}
+#flikr span:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ff6b24;
+  width: 4.1rem;
+  margin-left: 50%;
+}
+@media screen and (max-width: 768px) {
+  #flikr {
+    margin-bottom: 3rem;
+  }
+}
+#flikr img {
+  width: 20%;
+}
+#flikr .btn {
+  background-color: #ff6b24;
+  font: 1.25rem "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0;
+  line-height: 2.5rem;
+  width: 13rem;
+}
+#flikr .btn-primary {
+  border: none;
+}
+#flikr .btn.focus, #flikr .btn:focus {
+  box-shadow: none;
+}
+
+#blog {
+  margin-bottom: 6.3rem;
+}
+#blog h2 {
+  text-transform: uppercase;
+  font: 1.5rem "Arial", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  #blog h2 {
+    font-size: 2.5rem;
+  }
+}
+#blog span:before {
+  content: "";
+  display: block;
+  border-top: 1px solid #ff6b24;
+  width: 4.1rem;
+  margin: auto;
+  padding-bottom: 2px;
+}
+#blog span:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ff6b24;
+  width: 4.1rem;
+  margin-left: 50%;
+}
+@media screen and (max-width: 768px) {
+  #blog {
+    margin-bottom: 3rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

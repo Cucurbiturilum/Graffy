@@ -286,3 +286,39 @@ header {
   }
 }
 
+#flikr {
+  @include title;
+  margin-bottom: 6.3rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 3rem;
+  }
+
+  img {
+    width: 20%;
+  }
+
+  .btn {
+    background-color: #ff6b24;
+    font: 1.25rem $main-font;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0;
+    line-height: 2.5rem;
+    width: 13rem;
+  }
+
+  .btn-primary {
+    border: none;
+  }
+
+  .btn.focus, .btn:focus {
+    box-shadow: none;
+  }
+}
+#blog{
+  @include title;
+  margin-bottom: 6.3rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 3rem;
+  }
+}
