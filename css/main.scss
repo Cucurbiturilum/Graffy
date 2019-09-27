@@ -178,7 +178,7 @@ header {
       border-radius: 0;
       background-color: transparent;
       margin-bottom: 6.3rem;
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 500px) {
         margin: 3rem -15px;
       }
 
@@ -192,8 +192,8 @@ header {
 
         img {
           width: 23rem;
-          @media screen and (max-width: 425px) {
-            height: 23rem;
+          @media screen and (max-width: 500px) {
+            width: 100%;
             padding: 0 -15px;
           }
         }

@@ -197,7 +197,7 @@ header .navbar-light .navbar-toggler-icon {
   background-color: transparent;
   margin-bottom: 6.3rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   #work .accordion .card {
     margin: 3rem -15px;
   }
@@ -215,9 +215,9 @@ header .navbar-light .navbar-toggler-icon {
 #work .accordion .card .card-body img {
   width: 23rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   #work .accordion .card .card-body img {
-    height: 23rem;
+    width: 100%;
     padding: 0 -15px;
   }
 }
